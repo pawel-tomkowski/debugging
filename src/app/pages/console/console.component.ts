@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderTitleService } from 'src/app/header-title.service';
 
 @Component({
   selector: 'app-console',
@@ -10,7 +11,11 @@ import { MatButtonModule } from '@angular/material/button';
 export class ConsoleComponent {
   showConsoleCount = false;
   index = 0;
+
+  titleService = inject(HeaderTitleService);
+
   constructor() {
+    this.titleService.setTitle('Console');
     console.log(console);
     setInterval(() => {
       this.index++;

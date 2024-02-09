@@ -4,3 +4,8 @@
 <p>
   {{ index * index }}
 </p>
+
+<div *ngFor="let item of table">
+  {{ item.id }} -
+  {{ item.name }}
+</div>

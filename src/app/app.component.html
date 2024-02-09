@@ -6,7 +6,7 @@
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
+  <span>{{ title$ | async }}</span>
   <span class="example-spacer"></span>
   <button
     mat-icon-button
@@ -32,6 +32,9 @@
       </p>
       <p>
         <a routerLink="/store">Store</a>
+      </p>
+      <p>
+        <a routerLink="/change-detection">Change Detection</a>
       </p>
     </div>
   </mat-sidenav>

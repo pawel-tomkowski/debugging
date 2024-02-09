@@ -12,9 +12,10 @@ const routes: Routes = [
     path: 'store',
     component: StoreComponent,
   },
+
   {
     path: '',
-    redirectTo: '/console',
+    redirectTo: '/change-detection',
     pathMatch: 'full',
   },
 ];
