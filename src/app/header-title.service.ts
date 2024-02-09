@@ -9,6 +9,7 @@ export class HeaderTitleService {
   constructor() {}
 
   setTitle(title: string) {
+    //debugger;
     this.title$.next(title);
   }
 }
