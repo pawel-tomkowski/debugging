@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+.example-container {
+    display: block;
+    height: 100%;
+
+    .sidenav {
+        padding: 5px 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
