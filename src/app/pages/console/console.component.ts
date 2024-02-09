@@ -42,6 +42,9 @@ export class ConsoleComponent {
     console.log('Back to level 2');
     console.groupEnd();
     console.log('Back to the outer level');
+
+    const random = Math.floor(Math.random() * 10) + 1;
+    console.log(random);
   }
 
   consoleTableClick(): void {

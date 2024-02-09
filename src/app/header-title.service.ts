@@ -10,6 +10,11 @@ export class HeaderTitleService {
 
   setTitle(title: string) {
     //debugger;
-    this.title$.next(title);
+    this.internalFunction(title);
+  }
+
+  private internalFunction(title: string) {
+    const newTitle = title.slice(0, 10);
+    this.title$.next(newTitle);
   }
 }
